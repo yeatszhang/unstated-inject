@@ -2,11 +2,15 @@
   "name": "unstated-inject",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/unstated-inject.cjs.js",
+  "module": "dist/unstated-inject.es.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "bili --format cjs,es"
   },
   "author": "",
+  "devDependencies": {
+    "bili": "^3.0.12"
+  },
   "peerDependencies": {
     "unstated": "^2.1.1",
     "react": "^16.0.0"
